@@ -55,18 +55,15 @@
       <section id="home" class="section hero" aria-label="Home">
         <div class="container hero-grid">
           <div class="hero-media">
-            <picture>
-              <source srcset="Shanto (bg remove).png" type="image/png">
-              <img src="Shanto.jpg" alt="Portrait of Al Shahriar Ahommed Shanto" loading="eager" class="hero-photo" />
-            </picture>
+            <img src="Shanto (bg remove).png" alt="Portrait of Al Shahriar Ahommed Shanto" loading="eager" class="hero-photo" onerror="this.src='Shanto.jpg'" />
           </div>
           <div class="hero-content">
-            <p class="eyebrow">Software Developer</p>
-            <h1 class="display">Hi, I’m <span class="accent">Al Shahriar Ahommed Shanto</span>.</h1>
-            <p class="lead">I build modern, performant, and user-centric experiences. Explore my education, experience, projects, and achievements below.</p>
+            <!-- <p class="eyebrow">Hello, I'm</p> -->
+            <h1 class="display"> <span class="accent">Hello, I'm</span> Al Shahriar Ahommed Shanto</h1>
+            <p class="lead">Computer Science & Engineering student passionate about building innovative solutions and leading impactful projects. Currently pursuing my degree while actively contributing to tech communities and developing cutting-edge applications.</p>
             <div class="hero-cta">
-              <a href="#projects" class="btn primary">View Projects</a>
-              <a href="#contact" class="btn ghost">Get In Touch</a>
+              <a href="#contact" class="btn primary">Get In Touch</a>
+              <a href="#projects" class="btn outlined">View Projects</a>
             </div>
             <div class="socials">
               <a href="https://www.linkedin.com/in/alshahriarshanto/" aria-label="LinkedIn" target="_blank" rel="noopener" class="social-link" data-icon="linkedin"></a>
@@ -84,6 +81,7 @@
       <section id="education" class="section" aria-label="Education">
         <div class="container">
           <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">My academic journey and educational background</p>
           <ol class="timeline" id="education-timeline">
             <!-- TODO: Replace placeholders with CV content -->
             <li class="timeline-item">
@@ -118,6 +116,7 @@
       <section id="experience" class="section" aria-label="Experience">
         <div class="container">
           <h2 class="section-title">Experience</h2>
+          <p class="section-subtitle">Professional experience and internships</p>
           <div class="cards two" id="experience-cards">
             <article class="card">
               <header>
@@ -147,6 +146,7 @@
       <section id="projects" class="section" aria-label="Projects">
         <div class="container">
           <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">Featured projects and applications I've built</p>
           <div class="cards three" id="projects-grid">
             <article class="card project">
               <div class="project-media ratio-16x9 placeholder" aria-hidden="true"></div>
@@ -192,6 +192,7 @@
       <section id="skills" class="section" aria-label="Skills">
         <div class="container">
           <h2 class="section-title">Skills</h2>
+          <p class="section-subtitle">Technical skills and programming languages</p>
           <div class="skills-grid">
             <div class="skill"><span>Java</span><div class="bar" style="--p:65%"><i style="width:var(--p)"></i><b>65%</b></div></div>
             <div class="skill"><span>JavaScript</span><div class="bar" style="--p:60%"><i style="width:var(--p)"></i><b>60%</b></div></div>
@@ -213,6 +214,7 @@
       <section id="leadership" class="section" aria-label="Leadership">
         <div class="container">
           <h2 class="section-title">Leadership</h2>
+          <p class="section-subtitle">Leadership roles and organizational involvement</p>
           <div class="cards two">
             <article class="card">
               <header>
@@ -236,6 +238,7 @@
       <section id="achievements" class="section" aria-label="Achievements">
         <div class="container">
           <h2 class="section-title">Achievements & Certificates</h2>
+          <p class="section-subtitle">Certificates, awards, and recognition</p>
           <div class="grid certificates">
             <div class="certificate">
               <h3>Problem Solving (Basic) — HackerRank</h3>
@@ -257,6 +260,7 @@
       <section id="contact" class="section" aria-label="Contact">
         <div class="container">
           <h2 class="section-title">Contact Me</h2>
+          <p class="section-subtitle">Get in touch for opportunities and collaborations</p>
           <div class="contact-wrap">
             <form id="contact-form" class="form" novalidate>
               <div class="field">

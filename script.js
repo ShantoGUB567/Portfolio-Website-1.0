@@ -59,18 +59,18 @@
   const themeBtn = $('#theme-toggle');
   const THEME_KEY = 'pref-theme';
   const setTheme = (mode) => {
-    if (mode === 'light') root.classList.add('light');
-    else root.classList.remove('light');
+    if (mode === 'dark') root.classList.add('dark');
+    else root.classList.remove('dark');
     localStorage.setItem(THEME_KEY, mode);
   };
-  // Initialize theme
+  // Initialize theme (default to light)
   const stored = localStorage.getItem(THEME_KEY);
   if (stored) setTheme(stored);
-  else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) setTheme('light');
+  else setTheme('light');
   if (themeBtn) {
     themeBtn.addEventListener('click', () => {
-      const isLight = root.classList.toggle('light');
-      localStorage.setItem(THEME_KEY, isLight ? 'light' : 'dark');
+      const isDark = root.classList.toggle('dark');
+      localStorage.setItem(THEME_KEY, isDark ? 'dark' : 'light');
     });
   }
 
